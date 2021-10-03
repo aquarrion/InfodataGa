@@ -1,12 +1,12 @@
 package pojos;
 
-public class Monitor extends Producto{
+public class Monitor extends Alquilable{
     private String resolucionMaxima;
 
-    public Monitor(String codigo, String modelo, String resolucionMaxima){
-        super(codigo, modelo);
+    public Monitor(String codigo, String modelo, double precioHora, String resolucionMaxima){
+        super(codigo, modelo, precioHora);
 
-        this.setResolucionMaxima(resolucionMaxima);
+        this.resolucionMaxima = resolucionMaxima;
     }
 
     public String getResolucionMaxima() {
