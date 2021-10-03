@@ -34,6 +34,11 @@ public class Cpu extends Tecnologico implements IReseteable {
     }
 
     @Override
+    public void estado() {
+        System.out.println("Años de uso: " + 12);
+    }
+
+    @Override
     public void reset() {
         System.out.println("Reseteando al estado de fabrica.....");
     }
