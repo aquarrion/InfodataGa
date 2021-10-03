@@ -16,4 +16,14 @@ public class Monitor extends Alquilable{
     public void setResolucionMaxima(String resolucionMaxima) {
         this.resolucionMaxima = resolucionMaxima;
     }
+
+    @Override
+    public String toString() {
+        return "Monitor{" +
+                "precioHora=" + precioHora +
+                ", resolucionMaxima='" + resolucionMaxima + '\'' +
+                ", codigo='" + codigo + '\'' +
+                ", modelo='" + modelo + '\'' +
+                '}';
+    }
 }
