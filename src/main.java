@@ -27,7 +27,7 @@ public class main {
         Cpu cpu = new Cpu("Q5213","Razor","USA",Calendar.getInstance().getTime(),toshiba,1024);
         System.out.println(cpu);
 
-         */
+
 
         //polimorfismo
         Producto producto = new Producto("ms150","jesus 350");
@@ -53,5 +53,24 @@ public class main {
         for (int i = 0 ;i < productos.length; i++){
             System.out.println(productos[i]);
         }
+
+         */
+
+        Monitor lg1080 = new Monitor("lg1080", "monitor LG 1080",10, "4K HD");
+        lg1080.reset();
+
+        Impresora canon250 = new Impresora("canon250","Canon",250);
+        canon250.reset();
+
+        DiscoDuro s1000 = new DiscoDuro("s1000","Toshiba",10.5,512);
+        s1000.reset();
+
+        Empresa empresa = new Empresa("Toshiba","Av. Siempreviva",1500);
+        DiscoSolido SSD1 = new DiscoSolido("SSD1","Toshiba","Canada", Calendar.getInstance().getTime(),empresa,2084);
+        SSD1.reset();
+
+        Empresa empresa1 = new Empresa("Ryzen","Av. Chinajuato",1000);
+        Cpu Ryzen250 = new Cpu("Ryzen250","razor","United States", Calendar.getInstance().getTime(),empresa1,1024);
+        Ryzen250.reset();
     }
 }
